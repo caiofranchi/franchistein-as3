@@ -1,0 +1,6 @@
+<cross-domain-policy>  
+    <site-control permitted-cross-domain-policies="all"/>  
+    <allow-access-from domain="www.nextelseumundoagora.com.br" />  
+	<allow-access-from domain="nextel-seumundoagora-dev.one.com.br" />  
+    <allow-http-request-headers-from domain="*" headers="*"/>  
+</cross-domain-policy>  

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+LOADING TYPES:
+- loaded - already loaded
+- preloaded - will be preloaded with the main
+- queued - will be queued after the preloaded items 
+- demmand - will wait for user necessity
+- none - caso seja uma URL ouo javascript ou funcao
+
+TYPES:
+"internal-content";
+"external-saved-content";
+"external-loadable-content";
+"javascript";
+"function";
+"url";
+"none";
+
+PATH:
+O atributo path setado em cada area pode ser relativo ou absoluto
+
+se eh um arquivo externo deve conter o caminho do .swf
+se eh uma classe interna, deve conter o nome da classe
+se eh uma URL, deve conter o http://	
+se eh um javascript, deve conter a chamada do javascript
+se eh none, pode ficar em branco
+
+IGNORE:
+- if a item is ignored, will not suffer any kind of loading and will be placed at arrIgnoredItems
+-->
+<preloader>
+	<main>
+		<name>General</name>
+		<path>{root}generalNovaMarca.swf</path>
+		<class>br.novamarca.general.GeneralNovaMarca</class>
+		<loadingType>preloaded</loadingType>
+		<areasHaveDependencies>false</areasHaveDependencies>
+		<permalink>false</permalink>
+		<initialAreaName>home</initialAreaName>
+		<ua>UA-26001578-1</ua>
+		<url>http://nextel-seumundoagora-dev.one.com.br/</url> <!--{url} https://www.nextelseumundoagora.com.br/-->
+	</main>
+	<areas>
+		<area>
+			<name>home</name>
+			<path>{root}AreaHome.swf</path> <!--swf/conexao.swf, br.one.areas.BaseArea-->
+			<loadingType>preloaded</loadingType>
+			<type>internal-content</type>
+			<permalink>false</permalink>
+			<tag>/AreaHome</tag>
+			<menu></menu>
+			<button></button>
+			<ignore>false</ignore>
+			<class>br.novamarca.areas.AreaHome</class>
+		</area>
+		<area>
+			<name>nao-aceitou</name>
+			<path>{root}AreaNaoAceitou.swf</path> <!--swf/conexao.swf, br.one.areas.BaseArea-->
+			<loadingType>preloaded</loadingType>
+			<type>internal-content</type>
+			<permalink>false</permalink>
+			<tag>/AreaNaoAceitou</tag>
+			<menu></menu>
+			<button></button>
+			<ignore>false</ignore>
+			<class>br.novamarca.areas.AreaNaoAceitou</class>
+		</area>
+		<area>
+			<name>escolha-amigos</name>
+			<path>{root}AreaEscolhaAmigos.swf</path> <!--swf/conexao.swf, br.one.areas.BaseArea-->
+			<loadingType>preloaded</loadingType>
+			<type>internal-content</type>
+			<permalink>false</permalink>
+			<tag>/AreaEscolhaAmigos</tag>
+			<menu></menu>
+			<button></button>
+			<ignore>false</ignore>
+			<class>br.novamarca.areas.AreaEscolhaAmigos</class>
+		</area>
+		<area>
+			<name>share</name>
+			<path>{root}AreaShare.swf</path> <!--swf/conexao.swf, br.one.areas.BaseArea-->
+			<loadingType>preloaded</loadingType>
+			<type>internal-content</type>
+			<permalink>false</permalink>
+			<tag>/AreaShare</tag>
+			<menu></menu>
+			<button></button>
+			<ignore>false</ignore>
+			<class>br.novamarca.areas.AreaShare</class>
+		</area>
+		<area>
+			<name>share-externo</name>
+			<path>{root}AreaShareExterno.swf</path> <!--swf/conexao.swf, br.one.areas.BaseArea-->
+			<loadingType>preloaded</loadingType>
+			<type>internal-content</type>
+			<permalink>false</permalink>
+			<tag>/AreaShareExterno</tag>
+			<menu></menu>
+			<button></button>
+			<ignore>false</ignore>
+			<class>br.novamarca.areas.AreaShareExterno</class>
+		</area>
+		<area>
+			<name>share-email</name>
+			<path>{root}AreaCompartilheEmail.swf</path> <!--swf/conexao.swf, br.one.areas.BaseArea-->
+			<loadingType>preloaded</loadingType>
+			<type>internal-content</type>
+			<permalink>false</permalink>
+			<tag>/AreaCompartilheEmail</tag>
+			<menu></menu>
+			<button></button>
+			<ignore>false</ignore>
+			<class>br.novamarca.areas.AreaCompartilheEmail</class>
+		</area>
+		<area>
+			<name>share-email-sucesso</name>
+			<path>{root}AreaCompartilheEmailSucesso.swf</path> <!--swf/conexao.swf, br.one.areas.BaseArea-->
+			<loadingType>preloaded</loadingType>
+			<type>internal-content</type>
+			<permalink>false</permalink>
+			<tag>/AreaCompartilheEmailSucesso</tag>
+			<menu></menu>
+			<button></button>
+			<ignore>false</ignore>
+			<class>br.novamarca.areas.AreaCompartilheEmailSucesso</class>
+		</area>
+	</areas>
+	<assets>
+		<item>
+			<name>ExemploAssets</name>
+			<path>{root}xml/preloader.xml</path>
+			<loadingType>preloaded</loadingType>
+			<ignore>true</ignore>
+		</item>
+	</assets>
+</preloader>

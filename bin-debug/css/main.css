@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0 none;
+}
+
+
+body {
+	margin:0px;	
+	padding: 0px;
+}
+
+img{
+	border: 0 none;
+}
+
+ul, li{
+	list-style: none;
+	list-style-type: none;
+}
+
+a:hover, a:active, a:link, a:visited{
+	text-decoration: none;
+}
+
+.clear{
+	clear: both;
+}
+
+.main{
+	width:1083px;
+	margin:0 auto;
+	padding:4px 7px 8px;
+	background-color:#fff;
+}
+
+.header{
+	width:1083px;
+}
+
+.header a{
+	float:left;
+}
+
+.header a.right{
+	float:right;
+	padding-right:15px;
+	padding-bottom:5px;
+}
+
+.header a.logo{
+	margin-top:8px;
+	padding-left:15px;
+	
+}
+
+.conteudo{
+	width:1083px;
+	margin:0 auto;
+	background-color:#f8f3f0;
+	padding:40px 0;
+}
+
+.conteudo h1.termos{
+	margin:0 auto 35px;
+	width:251px;
+	height:30px;
+	
+}
+
+.conteudo .texto{
+	font-family:Arial;
+	font-size:12px;
+	color:#de4d00;
+	font-weight:normal;
+	width:809px;
+	margin:0 auto;
+}
+
+.conteudo .texto p{
+	margin-bottom:15px;
+	line-height:18px;
+}
+
+#container {margin:0 auto; width:1080px; height:610px;}
+
+.compartilhe{width:220px; height:21px; position:relative; left:850px; top:665px; z-index:2;}
+.compartilhe .like{width:70px}
+.compartilhe .plus{width:30px}
+.compartilhe .twitter{width:60px}
+
+.compartilhe a img{ border:0 }
+.compartilhe a, .compartilhe .like, .compartilhe .plus, .compartilhe .twitter{float:left; display:inline-block; margin-right:10px;}
+
